@@ -3,12 +3,19 @@
 //y genere y devuelva una lista con la secuencia de Fibonacci hasta ese número. 
 
 //declaro funcion
-function generarFibonacci($num1,$num2){
-   $suma = $num1 + $num2;
-   return $suma;
-   //retorna el numero de la suma
+function generarFibonacci($n) {
+    $fibonacci = [0, 1];
+    while ($fibonacci[count($fibonacci) - 1] + $fibonacci[count($fibonacci) - 2] <= $n) {
+      $fibonacci[] = $fibonacci[count($fibonacci) - 1] + $fibonacci[count($fibonacci) - 2];
+    }
+    return $fibonacci;
   }
-
-for($i=0; $i<10; $i++){
-    echo "La suma de 1 es: ".generarFibonacci($i, $i)."\n";
-}
+  
+  // salida en pantalla
+  $n = 10;
+  //llamar funcion
+  $fibonacci = generarFibonacci($n);
+  echo "La secuencia de Fibonacci hasta $n es: ";
+  echo implode(', ', $fibonacci);
+  echo "\n";
+  ?>
