@@ -10,12 +10,6 @@ function generarFibonacci($n) {
     }
     return $fibonacci;
   }
-  
-  // salida en pantalla
-  $n = 10;
-  //llamar funcion
-  $fibonacci = generarFibonacci($n);
-  echo "La secuencia de Fibonacci hasta $n es: ";
-  echo implode(', ', $fibonacci);
-  echo "\n";
-  ?>
+  $fibonacci = generarFibonacci(10);
+print_r($fibonacci);
+?>
