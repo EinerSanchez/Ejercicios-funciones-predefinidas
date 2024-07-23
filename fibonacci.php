@@ -8,8 +8,9 @@ function generarFibonacci($n) {
     while ($fibonacci[count($fibonacci) - 1] + $fibonacci[count($fibonacci) - 2] <= $n) {
       $fibonacci[] = $fibonacci[count($fibonacci) - 1] + $fibonacci[count($fibonacci) - 2];
     }
+    //retorno numeros de suma y resta 
     return $fibonacci;
   }
-  $fibonacci = generarFibonacci(10);
-print_r($fibonacci);
+  //llamar funcion y implode para seprar los numeros mediante una coma 
+  echo implode(', ', generarFibonacci(10));
 ?>
