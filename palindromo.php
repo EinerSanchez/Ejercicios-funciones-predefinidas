@@ -5,13 +5,18 @@
 // Pedir cadena de texto
 $texto = readline("Ingrese un texto: ");
 function esPalindromo($cadena) {
-  // Eliminar espacios y signos de puntuación
  
-  // Convertir a minúsculas
-  
-
+  // Revertir la cadena
+  $revertida = strrev($cadena);
+  // Comparar la cadena original con la revertida
+  return $cadena === $revertida;
 }
 
-
+// Llamar a la función esPalindromo
+if (esPalindromo($texto)) {
+  echo "True: '$texto' es un palíndromo.\n";
+} else {
+  echo "False: '$texto' no es un palíndromo.\n";
+}
 
 ?>
