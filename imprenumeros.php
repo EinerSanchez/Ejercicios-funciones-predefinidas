@@ -5,13 +5,13 @@ $numeros = range(1, 100);
 function FierroAlv($numeros) {
     foreach ($numeros as $numero) {
         if ($numero % 3 == 0 && $numero % 5 == 0) {
-            echo "PesoPluma\n";
+            echo "PesoPluma,";
         } elseif ($numero % 3 == 0) {
-            echo "Peso\n";
+            echo "Peso,";
         } elseif ($numero % 5 == 0) {
-            echo "Pluma\n";
+            echo "Pluma,";
         } else {
-            echo "$numero\n";
+            echo "$numero,";
         }
     }
 }
