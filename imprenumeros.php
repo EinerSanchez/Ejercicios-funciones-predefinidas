@@ -1,4 +1,7 @@
 <?php
+//Escribe una función llamada “FierroAlv” que imprima los números del 1 al 100, 
+//pero para los múltiplos de 3 imprime “Peso” en lugar del numero y para los múltiplos de 5 imprime “Pluma”. 
+//Para los números que son múltiplos ambos, imprime “PesoPluma”.
 //numeros y rango del 1-100
 $numeros = range(1, 100);
 //declaro funcion 
