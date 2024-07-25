@@ -1,8 +1,8 @@
 <?php
-//Escribe una función que calcule la suma de todos los dígitos de un numero entero dado.
-$numeros = readline("Ingrese un numero: ")
+// Pedimos al usuario que ingrese un número
+$numeros = readline("Ingrese un número: ");
 
-//declaro funcion 
+// Declaramos la función suma
 function suma($numeros) {
     $suma = 0;
     while ($numeros > 0) {
@@ -13,6 +13,6 @@ function suma($numeros) {
     return $suma;
 }
 
-// Llama a la función suma y muestra el resultado
-echo "La suma de los dígitos del número ingresado es: " . suma($numeros);
+// Llamamos a la función suma y mostramos el resultado
+echo "La suma de $numeros es: ". suma($numeros);
 ?>
