@@ -1,5 +1,6 @@
 <?php
-// Pedimos al usuario que ingrese un número
+//Escribe una función que calcule la suma de todos los dígitos de un numero entero dado. 
+// Pedimos al usuario que ingrese un número para sumar 
 $numeros = readline("Ingrese un número: ");
 
 // Declaramos la función suma
